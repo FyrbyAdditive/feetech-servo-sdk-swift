@@ -197,10 +197,12 @@ public struct SCServoUtils {
 // MARK: - Control Table Addresses
 
 public struct ControlTableAddress {
+    public static let modelNumber: UInt8 = 3
+    public static let minAngleLimit: UInt8 = 9
+    public static let maxAngleLimit: UInt8 = 11
     public static let torqueEnable: UInt8 = 40
     public static let goalAcc: UInt8 = 41
     public static let goalPosition: UInt8 = 42
     public static let goalSpeed: UInt8 = 46
     public static let presentPosition: UInt8 = 56
-    public static let modelNumber: UInt8 = 3
 }
